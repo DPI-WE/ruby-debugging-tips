@@ -14,6 +14,8 @@ Instead of relying on others for help, try using an inanimate object or even a p
 - It helps build independence in problem-solving.
 - It provides a non-judgmental "listener" that allows you to explore different aspects of the problem.
 
+<!--  -->
+
 - What is the main benefit of "rubber duck debugging"?
 - It provides a new angle on a problem by forcing you to articulate it clearly.
   - Correct! You'll be surprised how often talking to yourself helps you understand a problem better.
