@@ -102,3 +102,7 @@ Debugging is about understanding what's going wrong in your code and finding way
 
 Approximately how long (in minutes) did this lesson take you to complete?
 {: .free_text_number #time_taken title="Time taken" points="1" answer="any" }
+
+## Resources
+
+- [Rubber Duck Debugging: The Psychology of How it Works](https://www.thoughtfulcode.com/rubber-duck-debugging-psychology/)
