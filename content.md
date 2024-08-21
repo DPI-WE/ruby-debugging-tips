@@ -1,7 +1,7 @@
 # Debugging Tips
 Debugging is an essential skill for any programmer. It involves identifying and fixing errors or bugs in your code. This lesson will guide you through some effective debugging techniques in Ruby, focusing on methods that beginners can easily adopt.
 
-## Rubber Duck Debugging
+## Rubber Duck Debugging 🦆
 Sometimes when you're stuck on a problem, the solution isn't immediately clear. One technique many programmers use is to talk through the problem as if they're explaining it to someone else. This method is affectionately called "rubber ducking."
 
 ### What is Rubber Duck Debugging?
