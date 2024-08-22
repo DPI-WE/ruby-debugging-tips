@@ -102,7 +102,7 @@ When you run this code, it will pause execution at `binding.irb`, allowing you t
 ## Summary
 Debugging is about understanding what's going wrong in your code and finding ways to fix it. By using techniques like rubber duck debugging, puts and p statements, checking logs, reading stack traces, and using binding.irb, you can become more efficient at finding and fixing bugs in your Ruby programs.
 
-Approximately how long (in minutes) did this lesson take you to complete?
+- Approximately how long (in minutes) did this lesson take you to complete?
 {: .free_text_number #time_taken title="Time taken" points="1" answer="any" }
 
 ## Resources
