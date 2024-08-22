@@ -14,7 +14,7 @@ Instead of relying on others for help, try using an inanimate object or even a p
 - It helps build independence in problem-solving.
 - It provides a non-judgmental "listener" that allows you to explore different aspects of the problem.
 
-<!--  -->
+<!-- here to break up list/quiz -->
 
 - What is the main benefit of "rubber duck debugging"?
 - It provides a new angle on a problem by forcing you to articulate it clearly.
@@ -43,6 +43,8 @@ This will output:
 x: 10, y: 20
 ```
 
+I highly recommend adding `puts` and `p` statements throughout your code and reading logs to follow the flow of your code.
+
 ### 2. Check the Logs
 When you're running your Ruby or Sinatra application, errors and important events are often logged in the console or log files. Checking these logs can provide valuable insights into what might be going wrong.
 
@@ -59,9 +61,13 @@ end
 divide(10, 0)
 ```
 
-This code will produce a ZeroDivisionError, and the stack trace will show you where the error occurred.
+This code will produce a ZeroDivisionError, and the stack trace will show you where the error occurred. Make sure to look for line numbers. In this case, line 2 (where the ZeroDivisionError was raised) and line 5 (where the divide method is called).
 
-<!-- TODO: add visual -->
+```bash
+app.rb:2:in `/': divided by 0 (ZeroDivisionError)
+        from app.rb:2:in `divide'
+        from app.rb:5:in `<main>'
+```
 
 - What should you look at first when a Ruby error occurs?
 - The stack trace.
@@ -88,11 +94,40 @@ calculate_total(100, 20)
 
 When you run this code, it will pause execution at `binding.irb`, allowing you to interactively debug.
 
-<!-- TODO: add visual -->
+```
+% ruby app.rb
+
+From: app.rb @ line 2 :
+
+    1: def calculate_total(price, tax)
+ => 2:   binding.irb  # Debugging starts here
+    3:   total = price + tax
+    4: end
+    5: 
+    6: calculate_total(100, 20)
+
+irb(main):001> 
+```
+
+This allows us to print out the values of our variables at this specific point in execution.
+
+```
+irb(main):001> price
+=> 100
+irb(main):002> tax
+=> 20
+irb(main):003> 
+```
+
+You can use the `exit` command to continue execution.
+
+```
+irb(main):003> exit
+```
 
 - What does `binding.irb` allow you to do?
 - Drop into an interactive Ruby shell to inspect and debug your program.
-  -Correct! `binding.irb` is a powerful tool for real-time debugging.
+  - Correct! `binding.irb` is a powerful tool for real-time debugging.
 - Print out variables in the console.
   - Not quite. While you can print variables, `binding.irb` does much more.
 - Stop the program from running.
