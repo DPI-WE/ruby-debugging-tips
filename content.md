@@ -30,7 +30,8 @@ Instead of relying on others for help, try using an inanimate object or even a p
 ### 1. Use `puts` or `p` Statements
 One of the simplest and most effective ways to debug is by using `puts` or `p` statements to print out values and inspect the flow of your code. These statements will display information in the console, allowing you to track the state of variables or the progress of loops and conditionals.
 
-#### Example:
+Example:
+
 ```ruby
 x = 10
 y = 20
@@ -48,7 +49,7 @@ I highly recommend adding `puts` and `p` statements throughout your code and rea
 ### 2. Check the Logs
 When you're running your Ruby or Sinatra application, errors and important events are often logged in the console or log files. Checking these logs can provide valuable insights into what might be going wrong.
 
-#### 3. Always read the full error message.
+### 3. Always read the full error message.
 Look for the stack trace, which tells you where the error occurred. A stack trace is a report that Ruby generates when an error occurs. It shows the sequence of function calls that led to the error, helping you identify exactly where and why something went wrong.
 
 Example:
