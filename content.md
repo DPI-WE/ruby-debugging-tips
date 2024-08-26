@@ -48,10 +48,10 @@ I highly recommend adding `puts` and `p` statements throughout your code and rea
 ### 2. Check the Logs
 When you're running your Ruby or Sinatra application, errors and important events are often logged in the console or log files. Checking these logs can provide valuable insights into what might be going wrong.
 
-#### Always read the full error message.
+#### 3. Always read the full error message.
 Look for the stack trace, which tells you where the error occurred. A stack trace is a report that Ruby generates when an error occurs. It shows the sequence of function calls that led to the error, helping you identify exactly where and why something went wrong.
 
-#### Example:
+Example:
 
 ```ruby
 def divide(a, b)
